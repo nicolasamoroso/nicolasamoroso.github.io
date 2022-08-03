@@ -1,0 +1,109 @@
+:root {
+    --background: rgb(17, 17, 17);
+    --nav : rgba(17, 17, 17, 0.829);
+    --borde: rgb(38, 38, 38);
+    --hr : rgb(83, 83, 83);
+    --text : rgb(136, 136, 136);
+    --selection : rgba(255, 255, 255, 0.673);
+    --hover1: rgb(226, 226, 226);
+    --hover2: rgb(196, 196, 196);
+}
+
+::selection {
+    color: black;
+    background: var(--selection);
+}
+
+h1::selection {
+    color: rgba(0, 0, 0, 0.84);
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    max-width: 900px;
+    margin: auto;
+    background-color: var(--background);
+    padding: 0 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    padding: 35px 0;
+    justify-content: space-between;
+    user-select: none;
+}
+
+#navig {
+    gap: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+.nav-link {
+    border: none;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.nav-link:not(.active):hover  {
+    color: var(--hover2);
+}
+
+.active {
+    font-weight: 500;
+    color: white;
+}
+
+.name {
+    font-size: 18px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+hr {
+    border-color: var(--hr);
+    margin-top: 75px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 10px;
+}
+
+footer p {
+    color: var(--text);
+}
+
+footer a:hover {
+    color: var(--hover2);
+    text-decoration:underline;
+}
+
+.redes {
+    gap: 20px;
+    display: flex;
+}
+
+.redes a {
+    text-decoration: none;
+}
+

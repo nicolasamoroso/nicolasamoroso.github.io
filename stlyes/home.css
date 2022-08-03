@@ -1,0 +1,84 @@
+:root {
+    --background: rgb(17, 17, 17);
+    --nav : rgba(17, 17, 17, 0.829);
+    --borde: rgb(38, 38, 38);
+    --hr : rgb(83, 83, 83);
+    --text : rgb(136, 136, 136);
+    --selection : rgba(255, 255, 255, 0.673);
+    --hover1: rgb(226, 226, 226);
+    --hover2: rgb(196, 196, 196);
+}
+
+
+
+::-webkit-scrollbar {
+    width: 0;
+}
+  
+.name-hidden {
+    display: none;
+}
+
+.nuevo_nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    background-color: var(--nav);
+    justify-content: center;
+    text-align: center;
+    padding: 35px 0 35px 8.7px;
+    backdrop-filter:blur(5px);
+}
+
+#about_me {
+    display: flex;
+    align-items: center;
+    gap:20px;
+    margin: 20px 0;
+}
+
+.texto {
+    text-align: justify;
+    width: 100%;
+}
+
+.img_perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#projects {
+    padding: 0 5px;
+    scroll-margin-block-start: 150px;
+    scroll-margin-block-end: 110px;
+}
+
+.p_1 {
+    border: 2px solid var(--borde);
+    border-radius: 6px;
+    box-shadow: rgba(58, 58, 58, 0.12) 0px 8px 30px 0px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.p_1 h1 {
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 250%;
+    word-wrap: break-word;
+}
+
+.p_1 .git {
+   text-align: center;
+   padding: 10px;
+}
+
+.p_1 .git a {
+    text-decoration: none;
+}
+
+.p_1 img {
+    width: 100%;
+}

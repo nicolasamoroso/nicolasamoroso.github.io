@@ -1,0 +1,42 @@
+:root {
+    --background: rgb(17, 17, 17);
+    --nav : rgba(17, 17, 17, 0.829);
+    --borde: rgb(38, 38, 38);
+    --hr : rgb(83, 83, 83);
+    --text : rgb(136, 136, 136);
+    --selection : rgba(255, 255, 255, 0.673);
+    --hover1: rgb(226, 226, 226);
+    --hover2: rgb(196, 196, 196);
+}
+
+
+body {
+    max-width: 900px;
+    margin: auto;
+    background-color: var(--background);
+    padding: 0 20px;
+   
+}
+
+h2 {
+    font-weight: 400;
+}
+
+
+b {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.801);
+}
+
+.talk {
+    margin: 20px 0;
+}
+
+.talk a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#footer {
+    margin-top: 647px;
+}

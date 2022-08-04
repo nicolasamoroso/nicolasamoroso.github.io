@@ -25,10 +25,10 @@ window.onscroll = function() {
     //hace o deshace el navbar flex custom
     let nav = document.querySelector('#navig');
     let name1 = document.querySelector('.name');
-    if (window.pageYOffset > 0) {
+    if (window.pageYOffset > 10) {
         nav.classList.add('nuevo_nav');
         name1.classList.add('name-hidden');
-    } else if (window.pageYOffset <= 0) {
+    } else if (window.pageYOffset <= 10) {
         nav.classList.remove('nuevo_nav');
         name1.classList.remove('name-hidden');
     }

@@ -20,24 +20,15 @@ function pintar() {
 pintar();
 
 
+// var x = window.matchMedia("(max-width: 600px)");
+// if (x.matches) alert("XDDD");
+
 //pinta el boton cuando se el scroll llega a offset_p1 y cambia nav
 
 var p1 = document.querySelector('.p1');
-var p2 = document.querySelector('.p2');
-var p3 = document.querySelector('.p3');
 
-if (p1) {
-    var offset_p1 = p1.offsetTop-150;
-    console.log(offset_p1);
-}
-if (p2) {
-    var offset_p2 = p2.offsetTop-150;
-    console.log(offset_p2);
-}
-if (p3) {
-    var offset_p3 = p3.offsetTop;
-    console.log(offset_p3);
-}
+if (p1)
+    var offset_p1 = p1.offsetTop-200;
 
 window.onscroll = function() {
     let nav = document.querySelector('#navig');
@@ -47,34 +38,19 @@ window.onscroll = function() {
     if (window.pageYOffset > 40) {
         nav.classList.add('nuevo_nav');
         name1.classList.add('name-hidden');
-        if (window.pageYOffset >= offset_p1) {
-            p.classList.add('active');
-            link.classList.remove('active');
-        } else {
+        if (p.classList.contains('active') && window.pageYOffset < offset_p1) {
             p.classList.remove('active');
             link.classList.add('active');
+        }
+        else if (!p.classList.contains('active') && window.pageYOffset >= offset_p1) {
+            p.classList.add('active');
+            link.classList.remove('active');
         }
     } else if (window.pageYOffset <= 40) {
         nav.classList.remove('nuevo_nav');
         name1.classList.remove('name-hidden');
     }  
 }
-
-
-//scroll botón "projects"
-var cont = 1;
-
-function projects() {
-    if (window.pageYOffset < offset_p1) cont = 1;
-    else if (window.pageYOffset < offset_p2) cont = 2;
-
-    if (cont === 1) window.scroll(offset_p1, offset_p1);
-    else if (cont === 2) window.scroll(offset_p2, offset_p2);
-    else if (cont === 3) window.scroll(offset_p3, offset_p3);
-    else window.scroll(offset_p1, offset_p1);
-    cont++;
-}
-
 
 //Cambiar el hover con js
 // let current = document.getElementsByClassName('active');

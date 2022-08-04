@@ -20,50 +20,33 @@ function pintar() {
 pintar();
 
 
-// var x = window.matchMedia("(max-width: 600px)");
-// if (x.matches) alert("XDDD");
-
-//pinta el boton cuando se el scroll llega a offset_p1 y cambia nav
-
-var p1 = document.querySelector('.p1');
-
-if (p1)
-    var offset_p1 = p1.offsetTop-200;
-
 window.onscroll = function() {
+
+    //hace o deshace el navbar flex custom
     let nav = document.querySelector('#navig');
     let name1 = document.querySelector('.name');
-    let p = document.querySelector('.p');
-    let link = document.querySelector('.nav-link');
-    if (window.pageYOffset > 40) {
+    if (window.pageYOffset > 0) {
         nav.classList.add('nuevo_nav');
         name1.classList.add('name-hidden');
-        if (p.classList.contains('active') && window.pageYOffset < offset_p1) {
-            p.classList.remove('active');
-            link.classList.add('active');
-        }
-        else if (!p.classList.contains('active') && window.pageYOffset >= offset_p1) {
-            p.classList.add('active');
-            link.classList.remove('active');
-        }
-    } else if (window.pageYOffset <= 40) {
+    } else if (window.pageYOffset <= 0) {
         nav.classList.remove('nuevo_nav');
         name1.classList.remove('name-hidden');
-    }  
+    }
+
+
+    //pinta el boton cuando se supera su offset
+
+    let offset_p1 = document.querySelector('#projects').offsetTop-150;
+
+    let p = document.querySelector('.p');
+    let link = document.querySelector('.nav-link');
+    if (p.classList.contains('active') && window.pageYOffset < offset_p1) {
+        p.classList.remove('active');
+        link.classList.add('active');
+    }
+    else if (!p.classList.contains('active') && window.pageYOffset >= offset_p1) {
+        p.classList.add('active');
+        link.classList.remove('active');
+    }
 }
-
-//Cambiar el hover con js
-// let current = document.getElementsByClassName('active');
-                
-// var css = 'table td:hover{ background-color: #fff }';
-// var style = document.createElement('style');
-
-// if (style.styleSheet) {
-//     style.styleSheet.cssText = css;
-// } else {
-//     style.appendChild(document.createTextNode(css));
-// }
-
-// document.getElementsByTagName('nav-link')[0].appendChild(style);
-
 

@@ -26,12 +26,18 @@ var p1 = document.querySelector('.p1');
 var p2 = document.querySelector('.p2');
 var p3 = document.querySelector('.p3');
 
-if (p1)
+if (p1) {
     var offset_p1 = p1.offsetTop-150;
-if (p2)
+    console.log(offset_p1);
+}
+if (p2) {
     var offset_p2 = p2.offsetTop-150;
-if (p3)
-    var offset_p3 = p3.offsetTop-150;
+    console.log(offset_p2);
+}
+if (p3) {
+    var offset_p3 = p3.offsetTop;
+    console.log(offset_p3);
+}
 
 window.onscroll = function() {
     let nav = document.querySelector('#navig');

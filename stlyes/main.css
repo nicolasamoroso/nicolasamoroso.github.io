@@ -130,4 +130,12 @@ footer a:hover {
     .name {
         margin: auto;
     }
+
+    .redes {
+        margin: auto;
+    }
+
+    footer p {
+        display: none;
+    }
 }

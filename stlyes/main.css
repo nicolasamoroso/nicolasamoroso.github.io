@@ -74,9 +74,17 @@ a {
     color: var(--text);
 }
 
+.nav-link:not(.active):hover  {
+    color: var(--hover2);
+}
+
 .active {
     font-weight: 500;
     color: white;
+    /* border: none;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--text); */
 }
 
 .p.active {
@@ -120,11 +128,8 @@ footer a:hover {
     text-decoration: none;
 }
 
-
-@media (min-height: 300px) {
-    .nav-link:not(.active):hover  {
-        color: var(--hover2);
-    }
+.contact {
+    display: none;
 }
 
 @media (max-width: 600px) {
@@ -138,6 +143,11 @@ footer a:hover {
 
     .redes {
         margin: auto;
+        font-size: 80%;
+    }
+
+    .contact {
+        display: flex;
     }
 
     footer p {

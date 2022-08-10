@@ -34,15 +34,15 @@
     
     <form>
         
-        <input type="text" placeholder="Name" maxlength="40">
+        <input type="text" placeholder="Name" maxlength="40" oninput="this.setCustomValidity('')" oninvalid="this.setCustomValidity('Enter Name Here')" required>
         
-        <input type="text" placeholder="Email" maxlength="100">
+        <input type="email" placeholder="Email" maxlength="100" oninput="this.setCustomValidity('')" oninvalid="this.setCustomValidity('Enter Email Here')" required>
 
-        <input type="text" placeholder="Subject" maxlength="100">
+        <input type="text" placeholder="Subject" maxlength="100" oninput="this.setCustomValidity('')" oninvalid="this.setCustomValidity('Enter Subject Here')" required>
         
-        <textarea name="" cols="30" rows="10" placeholder="Message"></textarea>
+        <textarea name="" cols="30" rows="10" placeholder="Message" oninput="this.setCustomValidity('')" oninvalid="this.setCustomValidity('Enter Message Here')" required></textarea>
 
-        <input type="submit" id="btn" formaction="#" value="Enviar">
+        <input type="submit" id="btn" formaction="contact.html" value="Enviar">
     </form>
     
     
@@ -52,11 +52,10 @@
         <footer>
             <p>Inspired by <a href="https://leerob.io/" target="_blank">Lee Robinson</a></p>
             <div class="redes">
-                <p>
-                    <a href="https://twitter.com/nicoamorosoo/" target="_blank">Twitter</a>
-                    <a href="https://github.com/nicolasamoroso/" target="_blank">Github</a>
-                    <a href="https://www.linkedin.com/in/nicolas-amoroso/" target="_blank">Linkedin</a>
-                </p>
+                <a href="https://twitter.com/nicoamorosoo/" target="_blank">Twitter</a>
+                <a href="https://github.com/nicolasamoroso/" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/nicolas-amoroso/" target="_blank">Linkedin</a>
+                <a href="contact.html" class="contact">Contact</a>
             </div>
         </footer>
     </div>

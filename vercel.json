@@ -1,0 +1,12 @@
+{
+    "redirects": [
+        {
+            "source": "/",
+            "destination": "/index.html"
+        },
+        {
+            "source": "/cv",
+            "destination": "/N%20Amoroso%2011-10-22.pdf"
+        }
+    ]
+}

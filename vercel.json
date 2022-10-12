@@ -6,19 +6,19 @@
         },
         {
             "source": "/cv",
-            "destination": "/N%20Amoroso%2011-10-22.pdf"
+            "destination": "/N%20Amoroso%CV.pdf"
         },
         {
             "source": "/resume",
-            "destination": "/N%20Amoroso%2011-10-22.pdf"
+            "destination": "/N%20Amoroso%CV.pdf"
         },
         {
             "source": "/resume.pdf",
-            "destination": "/N%20Amoroso%2011-10-22.pdf"
+            "destination": "/N%20Amoroso%CV.pdf"
         },
         {
             "source": "/cv.pdf",
-            "destination": "/N%20Amoroso%2011-10-22.pdf"
+            "destination": "/N%20Amoroso%CV.pdf"
         }
     ]
 }

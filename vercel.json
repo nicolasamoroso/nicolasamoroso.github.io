@@ -19,6 +19,26 @@
         {
             "source": "/cv.pdf",
             "destination": "/N-Amoroso-CV.pdf"
+        },
+        {
+            "source": "/jap",
+            "destination": "/certificadoJAP.pdf"
+        },
+        {
+            "source": "/jap.pdf",
+            "destination": "/certificadoJAP.pdf"
+        },
+        {
+            "source": "/certificado",
+            "destination": "/certificadoJAP.pdf"
+        },
+        {
+            "source": "/certificado.pdf",
+            "destination": "/certificadoJAP.pdf"
+        },
+        {
+            "source": "/certificadoJAP",
+            "destination": "/certificadoJAP.pdf"
         }
     ]
 }
